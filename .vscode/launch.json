@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/klars/OneDrive - UNIVERSIDAD DE GRANADA/2º/1er cuatri/fundamentos de programacion/practicas_fp",
+      "program": "c:/Users/klars/OneDrive - UNIVERSIDAD DE GRANADA/2º/1er cuatri/fundamentos de programacion/practicas_fp/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

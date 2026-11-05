@@ -1,0 +1,29 @@
+/* ejercicio 8 - calcula el numero minimo de los paneles solares para producir una determinada
+cantidad de energia en un mes*/
+#include <stdio.h>
+#include<math.h>
+int main(){
+//Constantes
+const double Eficiencia=0.17, Area_panel=1.6, Energia_objetivo=1000.0; //Datos del enunciado
+
+//Variables
+double radiacion, energia_diaria_panel, energia_mensual_panel, num_paneles; //kWh/m^2*dia
+int dias_mes, num_paneles_final;
+
+printf("Introduce la radiacion solar promedio (kWh/m2*dia): \n"); //el usuario introduce la rad. sol. promedio
+scanf("%lf", &radiacion);
+
+printf("Introduce el numero de dias del mes: \n"); //el usuario itroduce el numero de dias en el mes elegido
+scanf("%d", &dias_mes);
+
+energia_diaria_panel = radiacion * Area_panel * Eficiencia; //energia al dia
+energia_mensual_panel = energia_diaria_panel * dias_mes; //energia mensual
+
+num_paneles = Energia_objetivo / energia_mensual_panel; //numero de paneles necesarios
+
+num_paneles_final=(int)ceil(num_paneles);
+
+printf("Numero de paneles solares necesarios: %d\n", num_paneles_final);
+
+return 0;
+}

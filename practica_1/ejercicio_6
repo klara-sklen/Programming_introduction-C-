@@ -1,0 +1,14 @@
+//ejercicio 6 - convierte Celsius a Fahrenheit//
+#include <stdio.h>
+
+int main(){
+float c, f; //grados en c-Celsius y f-Fahrenheit
+
+printf("Introduce la temperatura en grados Celsius: "); //el usuario introduce la temperatura
+scanf("%f", &c);
+f=c/5*9+32; // aplicamos la formula
+
+printf("%f grados Celsius son %f grados Fahrenheit", c, f); //imprime el mensaje
+
+return 0;
+}
